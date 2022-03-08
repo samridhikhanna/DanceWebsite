@@ -1,0 +1,62 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title This is tile
+        style
+            include ../static/style.css 
+    body 
+        nav#navbar.top 
+            ul
+                div#logo
+                     img(src="/static/3.png")
+                     p DA
+                li #[a(href='/') Home]
+                li #[a(href='/') About] 
+                li #[a(href='/') Services]
+                li #[a(href='/') Class Info]
+                li #[a(href='/') Contact Us]
+        section#introSection  
+            div Welcome to our Dance Academy
+            div.small Eat Sleep Dance Repeat 
+
+        section#missionSection
+            h3 Our Mission
+            div.cards 
+                div.card 
+                    h2 Mission 1
+                    div.card-box
+                        div.card-img
+                            img(src="/static/2.png")
+                        div.card-content
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+
+                div.card 
+                    h2 Mission 2
+                    div.card-box
+                        div.card-img
+                            img(src="/static/3.png")
+                        div.card-content
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                div.card 
+                    h2 Mission 3
+                    div.card-box
+                        div.card-img
+                            img(src="/static/4.png")
+                        div.card-content
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+
+        section#sponsorSection
+            h3 Section for Sponsors
+            div#sponsors
+                img(src="/static/apple.png", alt="Sponsor Image", Class="spImage")
+                img(src="/static/hp.png", alt="Sponsor Image", Class="spImage")
+                img(src="/static/micro.png", alt="Sponsor Image", Class="spImage")
+                img(src="/static/skype.png", alt="Sponsor Image", Class="spImage")
+            
+        footer#footer 
+            | Copyright © 2019 DanceAcademy.com | All rights reserved
+
+        script
+            include ../static/index.js
